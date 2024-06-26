@@ -1,0 +1,67 @@
+#contact-us {
+  background-color: var(--dark-color-75);
+}
+
+.contact-us-inner-wrapper {
+  padding: var(--mobile-white-space-md);
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.form-heading {
+  color: var(--accent-color);
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  margin-bottom: var(--mobile-white-space-xl);
+}
+
+.contact-details {
+  margin-top: var(--mobile-white-space-xl);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--light-color-75);
+}
+
+button[type='submit'] {
+  background-color: var(--secondary-bg-color);
+}
+
+.contact-details h3 {
+  color: var(--accent-color);
+}
+
+.contact-details p {
+  margin-bottom: 10px;
+  color: var(--light-color-50);
+}
+
+.contact-details a {
+  color: var(--light-color);
+}
+
+select,
+input[type='email'],
+input[type='text'],
+textarea {
+  width: 80%;
+  padding: var(--mobile-white-space-sm);
+  background-color: var(--dark-color-15);
+  color: var(--light-color);
+  border: 2px solid var(--secondary-bg-color);
+  border-radius: var(--mobile-white-space-xs);
+}
+
+select:focus,
+input[type='email']:focus,
+input[type='text']:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}

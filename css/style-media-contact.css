@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  .contact-us-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--desktop-white-space-md);
+    max-width: 1440px;
+  }
+
+  .contact-form {
+    width: 50%;
+    margin-right: var(--desktop-white-space-xs);
+    margin-bottom: 0;
+  }
+
+  .contact-details {
+    width: 50%;
+    margin-left: var(--desktop-white-space-xs);
+    margin-top: 0;
+  }
+}

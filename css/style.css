@@ -1,0 +1,535 @@
+/* contents */
+/* HEADER */
+/* NAV */
+/* MAIN */
+/* hero */
+/* Featured Products */
+/* About section */
+/* Exceptional Nutrition */
+/* Winning Treats */
+*,
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ivy Mode', sans-serif;
+  color: var(--dark-color);
+  overflow-x: hidden;
+}
+
+/* Header styling */
+header,
+main,
+footer {
+  margin: 0 auto;
+  position: relative;
+}
+
+.header-wrapper,
+.main-wrapper,
+.footer-wrapper {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 200px;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* NAV */
+#nav {
+  position: relative;
+}
+.menuVerborgen ul {
+  display: none;
+}
+
+.menuButton {
+  position: absolute;
+  top: -18px;
+  width: 50px;
+  height: 50px;
+  padding-bottom: 50px;
+  cursor: pointer;
+  z-index: 100;
+}
+.menuButton .streep {
+  width: 35px;
+  height: 2.5px;
+  border-radius: 3px;
+  background-color: var(--dark-color);
+  position: absolute;
+  left: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.menuButton:hover .streep {
+  background-color: var(--accent-color);
+}
+
+.menuVerborgen .streep:nth-of-type(1) {
+  top: 2px;
+  left: 5px;
+  transform: rotate(0);
+}
+
+.menuVerborgen .streep:nth-of-type(2) {
+  top: 12px;
+  left: 5px;
+  filter: opacity(1);
+}
+
+.menuVerborgen .streep:nth-of-type(3) {
+  top: 22px;
+  left: 5px;
+  transform: rotate(0);
+}
+
+.streep:nth-of-type(1) {
+  top: -1px;
+  left: 5px;
+  transform: rotate(45deg);
+}
+
+.streep:nth-of-type(2) {
+  top: -1px;
+  left: -50px;
+  filter: opacity(0);
+}
+
+.streep:nth-of-type(3) {
+  top: -1px;
+  left: 5px;
+  transform: rotate(-45deg);
+}
+
+.menuVerborgen ul,
+nav ul {
+  position: absolute;
+  top: 0;
+  width: 110vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -20vw;
+  margin-right: -20vw;
+  margin-top: var(--mobile-white-space-xl);
+  background-color: var(--dark-color-75);
+  transform: translateY(-50px);
+  border-bottom-right-radius: 0.25rem;
+  z-index: 100;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bringDown {
+  animation: bringDownMenu 0.5s ease-in-out forwards;
+}
+
+@keyframes bringDownMenu {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.menuVerborgen ul li,
+nav ul li,
+ul li {
+  list-style: none;
+  border-top: 1px solid var(--dark-color);
+}
+.menuVerborgen ul li:last-of-type,
+nav ul li:last-of-type {
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.menuVerborgen ul li:hover,
+nav ul li:hover {
+  background-color: var(--dark-color-75);
+  color: var(--light-color);
+}
+
+.menuVerborgen ul li a,
+nav ul li a {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: var(--light-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.menuVerborgen ul li a,
+nav ul li a,
+ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.menuVerborgen ul li a:hover,
+nav ul li a:hover,
+ul li a:hover,
+.menuVerborgen ul li:hover a,
+nav ul li:hover a,
+ul li:hover a {
+  color: var(--accent-color);
+}
+
+.menuVerborgen ul li a.active,
+nav ul li a.active,
+ul li a.active {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.cart-wrapper {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+
+.cart-wrapper .cart:hover svg,
+.cart-wrapper .log-in:hover svg {
+  fill: var(--accent-color);
+}
+
+.counter {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 25px;
+  height: 25px;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+.cart-wrapper .cart:hover .counter {
+  transform: scale(1.15);
+  background-color: var(--secondary-bg-color);
+}
+/* MAIN */
+/* hero */
+
+.hero-img {
+  width: 100vw;
+  padding: 40vh 0;
+  margin: 0 auto;
+  background-image: url('../assets/img/PetBistroLandingLeft.png');
+  background-size: cover;
+  object-fit: cover;
+  background-position: center left 75%;
+  background-repeat: no-repeat;
+}
+
+.hero-text-wrapper {
+  width: 80vw;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.hero-heading {
+  font-size: var(--mobile-fs-title-head);
+  margin-top: var(--mobile-white-space-xl);
+  font-weight: var(--head-font-weight);
+  color: var(--accent-color);
+}
+.hero-subheading {
+  font-size: var(--mobile-fs-title-subhead);
+  margin: var(--mobile-white-space-lg) auto;
+}
+.hero-text-wrapper button.btn {
+  margin-top: var(--mobile-white-space-xl);
+}
+
+.hero-text-wrapper a.btn {
+  margin-top: var(--mobile-white-space-xl);
+  width: 50%;
+  line-height: 35px;
+}
+
+/* Featured Products */
+
+.card-wrapper-bg {
+  width: 100vw;
+  padding: 1000px 0;
+  position: absolute;
+  top: 80vh;
+  /* background-image: url(../assets/img/index-main/divider-mobile-2.jpeg); */
+  z-index: -1;
+  opacity: 0.1;
+}
+.card-wrapper {
+  padding-bottom: var(--mobile-white-space-lg);
+  /* margin-bottom: var(--mobile-white-space-lg); */
+}
+
+.slider {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.sliding-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  cursor: pointer;
+}
+
+.slick-slide img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.card-text {
+  width: 100%;
+  text-align: center;
+}
+
+.card-heading {
+  padding: var(--mobile-white-space-md) 0;
+}
+
+.btn-card {
+  margin: var(--mobile-white-space-md) auto;
+}
+
+.sliding-card:last-of-type a.btn-anchor {
+  width: 80%;
+}
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+/* About section */
+
+.food-info-wrapper {
+  padding: var(--mobile-white-space-lg) 0;
+  background-color: var(--accent-color);
+  margin: 0 auto;
+}
+
+.food-info-wrapper .food-img-wrapper,
+.food-info-wrapper .food-text {
+  width: 100vw;
+  height: 450px;
+  padding: var(--mobile-white-space-md) 0;
+  background-color: var(--accent-color);
+}
+
+.food-info-wrapper .food-alt-bg {
+  background-color: var(--secondary-bg-color);
+}
+
+.food-info-wrapper .food-img {
+  width: calc(3461px * 0.1);
+  height: calc(3461px * 0.1);
+  margin: var(--mobile-white-space-sm) auto;
+}
+.food-img-wrapper:nth-of-type(1) .food-img {
+  background-image: url(../assets/img/index-main/Pet-food-with-meat.jpeg);
+}
+
+.food-img-wrapper:nth-of-type(3) .food-img {
+  background-image: url(../assets/img/index-main/paw-food.jpeg);
+  margin-top: var(--mobile-white-space-xl);
+}
+
+.food-img-wrapper:nth-of-type(5) .food-img {
+  background-image: url(../assets/img/index-main/Pet-food-heart.jpeg);
+  margin-top: var(--mobile-white-space-xl);
+}
+
+.food-heading {
+  font-size: var(--mobile-fs-body-head);
+}
+
+.food-body {
+  font-size: var(--mobile-fs-body);
+  margin: var(--mobile-white-space-md) auto;
+  width: 60%;
+}
+
+/* Exceptional Nutrition */
+#winning-treats {
+  overflow: hidden;
+}
+.exceptional-text-wrapper {
+  width: 80vw;
+  height: 400px;
+  margin: var(--mobile-white-space-lg) auto;
+}
+
+.exceptional-img-wrapper img {
+  width: calc(1944px * 0.075);
+  height: calc(1944px * 0.075);
+  margin: var(--mobile-white-space-md) auto;
+}
+
+.exceptional-text-wrapper:nth-of-type(1) {
+  width: 80%;
+  margin: var(--mobile-white-space-lg) auto;
+  height: 200px;
+}
+.exceptional-body {
+  width: 60%;
+  margin: var(--mobile-white-space-md) auto;
+}
+.exceptional-body h4,
+.exceptional-body p {
+  margin: var(--mobile-white-space-md) auto;
+}
+
+#exceptional-nutrition {
+  position: relative;
+}
+
+/* Winning Treats */
+.wt-img:nth-of-type(1) {
+  width: calc(2048px * 0.35);
+  height: calc(1362px * 0.35);
+  margin: 0 auto var(--mobile-white-space-md) auto;
+  background-image: url(../assets/img/index-main/dog\ treat.png);
+}
+.wt-text {
+  width: 80%;
+  margin: var(--mobile-white-space-xl) auto;
+}
+
+.wt-body {
+  width: 60%;
+  margin: var(--mobile-white-space-md) auto;
+}
+
+.wt-unordered {
+  width: 60%;
+  margin: var(--mobile-white-space-md) auto;
+}
+.wt-list {
+  list-style: inside;
+  border: none;
+}
+
+#mailing-list {
+  padding: var(--mobile-white-space-xs) 0;
+  background-color: var(--accent-color);
+}
+
+.mailing-heading,
+.mailing-subhead {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.mailing-heading {
+  font-size: var(--mobile-fs-body-head);
+  padding: var(--mobile-white-space-md) 0;
+}
+
+.mailing-subhead {
+  font-size: var(--mobile-fs-body-lg);
+}
+
+.footer-wrapper {
+  max-width: 1440px;
+  padding: 1.5rem;
+}
+
+.resources h3 {
+  font-size: var(--mobile-fs-body-head);
+  padding: var(--mobile-white-space-md) 0;
+}
+.resources ul {
+  padding: 0 0 var(--mobile-white-space-md) 0;
+}
+.resources ul li {
+  border: none;
+  padding: var(--mobile-white-space-sm) 0;
+  text-align: center;
+}
+.resources ul li a {
+  color: var(--dark-color);
+}
+.resources ul li a:hover {
+  color: var(--accent-color);
+}
+
+.resources ul li:hover {
+  background-color: var(--dark-color-15);
+}
+
+.copy-socials {
+  width: 100%;
+}
+.social-icons-container,
+.payment-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-socials img {
+  width: 50px;
+  height: 50px;
+  margin: 0 var(--mobile-white-space-md);
+}
+
+.copy-socials img.paypal {
+  width: 80px;
+  height: 80px;
+  margin: 0 var(--mobile-white-space-md);
+}
+
+.copyright p {
+  font-size: var(--mobile-fs-body-subhead);
+  padding: var(--mobile-white-space-md) 0;
+}

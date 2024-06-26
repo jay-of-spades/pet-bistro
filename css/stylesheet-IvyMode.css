@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Ivy Mode';
+  src: url('../assets/fonts/IvyMode/IvyMode-Regular.eot');
+  src: local('Ivy Mode Regular'), local('IvyMode-Regular'),
+    url('../assets/fonts/IvyMode/IvyMode-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-Regular.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-Regular.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ivy Mode';
+  src: url('../assets/fonts/IvyMode/IvyMode-LightItalic.eot');
+  src: local('Ivy Mode Light Italic'), local('IvyMode-LightItalic'),
+    url('../assets/fonts/IvyMode/IvyMode-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-LightItalic.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-LightItalic.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ivy Mode SemiBold Italic';
+  src: url('../assets/fonts/IvyMode/IvyMode-SemiBoldItalic.eot');
+  src: local('Ivy Mode SemiBold Italic'), local('IvyMode-SemiBoldItalic'),
+    url('../assets/fonts/IvyMode/IvyMode-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-SemiBoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-SemiBoldItalic.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ivy Mode';
+  src: url('../assets/fonts/IvyMode/IvyMode-ThinItalic.eot');
+  src: local('Ivy Mode Thin Italic'), local('IvyMode-ThinItalic'),
+    url('../assets/fonts/IvyMode/IvyMode-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-ThinItalic.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-ThinItalic.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ivy Mode Italic';
+  src: url('../assets/fonts/IvyMode/IvyMode-Italic.eot');
+  src: local('Ivy Mode Italic'), local('IvyMode-Italic'),
+    url('../assets/fonts/IvyMode/IvyMode-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-Italic.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-Italic.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ivy Mode Bold Italic';
+  src: url('../assets/fonts/IvyMode/IvyMode-BoldItalic.eot');
+  src: local('Ivy Mode Bold Italic'), local('IvyMode-BoldItalic'),
+    url('../assets/fonts/IvyMode/IvyMode-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-BoldItalic.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-BoldItalic.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ivy Mode Bold';
+  src: url('../assets/fonts/IvyMode/IvyMode-Bold.eot');
+  src: local('Ivy Mode Bold'), local('IvyMode-Bold'),
+    url('../assets/fonts/IvyMode/IvyMode-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-Bold.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-Bold.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ivy Mode';
+  src: url('../assets/fonts/IvyMode/IvyMode-Light.eot');
+  src: local('Ivy Mode Light'), local('IvyMode-Light'),
+    url('../assets/fonts/IvyMode/IvyMode-Light.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-Light.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-Light.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ivy Mode';
+  src: url('../assets/fonts/IvyMode/IvyMode-Thin.eot');
+  src: local('Ivy Mode Thin'), local('IvyMode-Thin'),
+    url('../assets/fonts/IvyMode/IvyMode-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-Thin.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-Thin.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ivy Mode SemiBold';
+  src: url('../assets/fonts/IvyMode/IvyMode-SemiBold.eot');
+  src: local('Ivy Mode SemiBold'), local('IvyMode-SemiBold'),
+    url('../assets/fonts/IvyMode/IvyMode-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/IvyMode/IvyMode-SemiBold.woff2') format('woff2'),
+    url('../assets/fonts/IvyMode/IvyMode-SemiBold.woff') format('woff'),
+    url('../assets/fonts/IvyMode/IvyMode-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}

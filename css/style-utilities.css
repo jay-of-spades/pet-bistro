@@ -1,0 +1,241 @@
+:root {
+  --light-color: #fefefc;
+  --light-color-15: #fefefc26;
+  --light-color-25: #fefefc40;
+  --light-color-50: #fefefc80;
+  --light-color-75: #fefefcbf;
+  --dark-color: #020204;
+  --dark-color-15: #02020426;
+  --dark-color-25: #02020440;
+  --dark-color-50: #02020480;
+  --dark-color-75: #020204bf;
+  --secondary-bg-color: #ba5923;
+  --secondary-bg-color-15: #ba592326;
+  --secondary-bg-color-25: #ba592340;
+  --secondary-bg-color-50: #ba592380;
+  --secondary-bg-color-75: #ba5923bf;
+  --alt-color: #eac189;
+  --alt-color-15: #eac18926;
+  --alt-color-25: #eac18940;
+  --alt-color-50: #eac18980;
+  --alt-color-75: #eac189bf;
+  --accent-color: #54aea5;
+  --accent-color-15: #54aea526;
+  --accent-color-25: #54aea540;
+  --accent-color-50: #54aea580;
+  --accent-color-75: #54aea5bf;
+
+  --body-font-weight: 300;
+  --strong-font-weight: 700;
+  --head-font-weight: 900;
+
+  --body-font-style: normal;
+  --body-attention-font-style: italic;
+
+  --mobile-fs-title-head: 90px;
+  --mobile-fs-title-head-sm: 50px;
+  --mobile-fs-title-subhead: 30px;
+  --mobile-fs-section-head: 25px;
+  --mobile-fs-body-head: 18px;
+  --mobile-fs-body-subhead: 16px;
+  --mobile-fs-body-lg: 14px;
+  --mobile-fs-body: 12px;
+  --mobile-fs-body-sm: 10px;
+
+  --desktop-fs-title-head: 100px;
+  --desktop-fs-title-subhead: 50px;
+  --desktop-fs-section-head: 40px;
+  --desktop-fs-body-head: 30px;
+  --desktop-fs-body-subhead: 24px;
+  --desktop-fs-body-lg: 18px;
+  --desktop-fs-body: 16px;
+  --desktop-fs-body-md: 14px;
+  --desktop-fs-body-sm: 12px;
+
+  --mobile-white-space-xs: 5px;
+  --mobile-white-space-sm: 10px;
+  --mobile-white-space-md: 25px;
+  --mobile-white-space-lg: 50px;
+  --mobile-white-space-xl: 75px;
+  --mobile-white-space-xxl: 120px;
+
+  --desktop-white-space-xs: 10px;
+  --desktop-white-space-sm: 20px;
+  --desktop-white-space-md: 50px;
+  --desktop-white-space-lg: 70px;
+  --desktop-white-space-xl: 100px;
+  --desktop-white-space-xxl: 150px;
+}
+
+.text-spacing {
+  letter-spacing: 12%;
+  line-height: 150%;
+}
+
+.text-centering {
+  text-align: center;
+}
+
+.dark-text {
+  color: var(--dark-color);
+}
+
+.light-text {
+  color: var(--light-color);
+}
+
+.accent-text {
+  color: var(--accent-color);
+}
+.transform-upper {
+  text-transform: uppercase;
+}
+
+.transform-lower {
+  text-transform: lowercase;
+}
+
+.transform-capitalize {
+  text-transform: capitalize;
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.bg-img-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.museo {
+  font-family: 'Museo', sans-serif;
+}
+.museo-italic {
+  font-family: 'Museo-Italic', sans-serif;
+}
+.museo-700 {
+  font-family: 'Museo-700', sans-serif;
+}
+.museo-700-italic {
+  font-family: 'Museo-700-Italic', sans-serif;
+}
+.museo-900 {
+  font-family: 'Museo-900', sans-serif;
+}
+.museo-900-italic {
+  font-family: 'Museo-900-Italic', sans-serif;
+}
+
+.ivy-mode {
+  font-family: 'Ivy Mode', sans-serif;
+}
+.ivy-mode-italic {
+  font-family: 'Ivy Mode Italic', sans-serif;
+}
+.ivy-mode-700 {
+  font-family: 'Ivy Mode SemiBold', sans-serif;
+}
+.ivy-mode-700-italic {
+  font-family: 'Ivy Mode SemiBold Italic', sans-serif;
+}
+.ivy-mode-900 {
+  font-family: 'Ivy Mode Bold', sans-serif;
+}
+.ivy-mode-900-italic {
+  font-family: 'Ivy Mode Bold Italic', sans-serif;
+}
+
+.btn {
+  display: table-cell;
+  vertical-align: middle;
+  border: none;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  height: 40px;
+  padding: 0 var(--mobile-white-space-md);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: var(--strong-font-weight);
+  font-size: var(--mobile-fs-body-subhead);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+}
+
+.btn-alt {
+  border: 1px solid var(--light-color);
+  background-color: transparent;
+  color: var(--light-color);
+}
+
+.btn-alt:hover {
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+  cursor: pointer;
+}
+
+.btn-alt:active {
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
+}
+
+.btn-anchor {
+  width: 200px;
+  padding: var(--mobile-white-space-sm) 0;
+  line-height: 17.5px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-flex-basic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-box {
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--mobile-white-space-md);
+}
+
+input {
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: var(--mobile-white-space-xs);
+}

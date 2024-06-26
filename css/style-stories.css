@@ -1,0 +1,282 @@
+.ms-wrapper {
+  width: 80vw;
+  margin: 0 auto var(--mobile-white-space-lg) auto;
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+.ms-landing-img {
+  width: calc(814px * 0.45);
+  height: calc(1150px * 0.45);
+  margin: var(--mobile-white-space-md) auto;
+  background-image: url(../assets/img/stories/story-newsletter.jpg);
+}
+
+.ms-subscribe-img {
+  width: calc(1088px * 0.35);
+  height: calc(870px * 0.35);
+  margin: var(--mobile-white-space-md) auto;
+  background-image: url(../assets/img/stories/story-coffee-table.jpg);
+}
+.ms-heading {
+  font-size: var(--mobile-fs-title-head-sm);
+}
+.ms-subhead {
+  font-size: var(--mobile-fs-title-subhead);
+  margin: var(--mobile-white-space-md) auto;
+}
+
+#start-young {
+  width: 100%;
+  height: 100%;
+  padding: 25vh 0;
+  background-image: url(../assets/img/stories/stories-landing.jpeg);
+}
+.sy-heading {
+  font-size: var(--mobile-fs-title-head-sm);
+  margin: var(--mobile-white-space-md) auto;
+  width: 80vw;
+  max-width: 1440px;
+  padding: 15vh 0;
+  background: var(--light-color-50);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.7px);
+  -webkit-backdrop-filter: blur(6.2px);
+}
+.subscribe-wrapper button {
+  margin: var(--mobile-white-space-md) auto;
+}
+#story-collection {
+  background-color: var(--accent-color-75);
+}
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: var(--mobile-white-space-lg);
+  grid-auto-flow: dense;
+  justify-items: center;
+  padding: var(--mobile-white-space-lg);
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.story-card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 12px 17px 51px var(--dark-color-25);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  font-weight: bolder;
+  color: var(--dark-color);
+}
+.story-title {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  font-size: var(--mobile-fs-body-head);
+  background-color: var(--dark-color-15);
+  color: var(--light-color);
+  height: 200px;
+  width: 100%;
+  line-height: 200px;
+  border-radius: 0 0 17px 17px;
+  backdrop-filter: blur(6px);
+}
+.story-description-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-bg-color-50);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.3px);
+  -webkit-backdrop-filter: blur(10.3px);
+  color: var(--light-color);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 17px;
+  transition: all 0.75s;
+}
+.story-card:hover .story-description-wrapper {
+  opacity: 1;
+}
+.story-author {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 150px;
+  line-height: 200px;
+  border-radius: 50%;
+}
+.story-description {
+  width: 80%;
+  margin-top: 150px;
+}
+.story-card:nth-of-type(1) {
+  background-image: url(../assets/img/stories/01\ -\ cover\ -\ superfoods\ .jpg);
+}
+.story-card:nth-of-type(1) .story-author {
+  background-image: url(../assets/img/stories/owners/01\ -\ owner\ -\ Jack\ Dorsney.jpg);
+}
+.story-card:nth-of-type(2) {
+  background-image: url(../assets/img/stories/Understanding_Food_Allergies_in_Dogs\ copy.jpg);
+}
+.story-card:nth-of-type(2) .story-author {
+  background-image: url(../assets/img/stories/owners/Emily_Cartwright.jpg);
+}
+.story-card:nth-of-type(3) {
+  background-image: url(../assets/img/stories/The_Homemakers_vs_The_Market_Navigate_th_2.jpg);
+}
+.story-card:nth-of-type(3) .story-author {
+  background-image: url(../assets/img/stories/owners/Sarah_Nguyen.jpg);
+}
+.story-card:nth-of-type(4) {
+  background-image: url(../assets/img/stories/GrainFree_dog_Diets_Hype_or_Health_3.jpg);
+}
+.story-card:nth-of-type(4) .story-author {
+  background-image: url(../assets/img/stories/owners/Laura_Kim.jpg);
+}
+.story-card:nth-of-type(5) {
+  background-image: url(../assets/img/stories/Unleash_the_Power_of_Superfoods\ copy.jpg);
+}
+.story-card:nth-of-type(5) .story-author {
+  background-image: url(../assets/img/stories/owners/Michael_Chen.jpg);
+}
+.story-card:nth-of-type(6) {
+  background-image: url(../assets/img/stories/Label_Lingo_Unleashed.jpg);
+}
+.story-card:nth-of-type(6) .story-author {
+  background-image: url(../assets/img/stories/owners/Zoe_Rivera.jpg);
+}
+.story-card:nth-of-type(7) {
+  background-image: url(../assets/img/stories/Smooth_Transitions.jpg);
+}
+.story-card:nth-of-type(7) .story-author {
+  background-image: url(../assets/img/stories/owners/Lisa_Gordon.jpg);
+}
+.story-card:nth-of-type(8) {
+  background-image: url(../assets/img/stories/Balanced_Bites_for_Bruno.jpg);
+}
+.story-card:nth-of-type(8) .story-author {
+  background-image: url(../assets/img/stories/owners/Mark_Delaney.jpg);
+}
+.story-card:nth-of-type(9) {
+  background-image: url(../assets/img/stories/Golden_Years_Nutrition.jpg);
+}
+.story-card:nth-of-type(9) .story-author {
+  background-image: url(../assets/img/stories/owners/Janet_Foster.jpg);
+}
+.story-card:nth-of-type(10) {
+  background-image: url(../assets/img/stories/A_Shiny_Coat_from_the_Inside_Out.jpg);
+}
+.story-card:nth-of-type(10) .story-author {
+  background-image: url(../assets/img/stories/owners/Patricia_Young.jpg);
+}
+.story-card:nth-of-type(11) {
+  background-image: url(../assets/img/stories/Seasonal_Feasts.jpg);
+}
+.story-card:nth-of-type(11) .story-author {
+  background-image: url(../assets/img/stories/owners/Kevin_Lopez.jpg);
+}
+.story-card:nth-of-type(12) {
+  background-image: url(../assets/img/stories/Filler-Free_Life_for_Fergus.jpg);
+}
+.story-card:nth-of-type(12) .story-author {
+  background-image: url(../assets/img/stories/owners/Samantha_Doyle\ .jpg);
+}
+.story-card:nth-of-type(13) {
+  background-image: url(../assets/img/stories/Raw_Diets_Unearthed.jpg);
+}
+.story-card:nth-of-type(13) .story-author {
+  background-image: url(../assets/img/stories/owners/Alex_Tran.jpg);
+}
+.story-card:nth-of-type(14) {
+  background-image: url(../assets/img/stories/Digestive_Health_and_Probiotics.jpg);
+}
+.story-card:nth-of-type(14) .story-author {
+  background-image: url(../assets/img/stories/owners/Rachel_Green.jpg);
+}
+.story-card:nth-of-type(15) {
+  background-image: url(../assets/img/stories/Chew_on_This_Dog_Food_for_Dental_Health.jpg);
+}
+.story-card:nth-of-type(15) .story-author {
+  background-image: url(../assets/img/stories/owners/Connor_Smith.jpg);
+}
+.story-card:nth-of-type(16) {
+  background-image: url(../assets/img/stories/Puppy_Nutrition.jpg);
+}
+.story-card:nth-of-type(16) .story-author {
+  background-image: url(../assets/img/stories/owners/Mia_Rodriguez.jpg);
+}
+.story-card:nth-of-type(17) {
+  background-image: url(../assets/img/stories/Fighting_the_Flab.jpg);
+}
+.story-card:nth-of-type(17) .story-author {
+  background-image: url(../assets/img/stories/owners/Tonya_Burke.jpg);
+}
+.story-card:nth-of-type(18) {
+  background-image: url(../assets/img/stories/Fueling_Furry_Athletes.jpg);
+}
+.story-card:nth-of-type(18) .story-author {
+  background-image: url(../assets/img/stories/owners/David_Lee.jpg);
+}
+.story-card:nth-of-type(19) {
+  background-image: url(../assets/img/stories/Breed-Specific_Bites.jpg);
+}
+.story-card:nth-of-type(19) .story-author {
+  background-image: url(../assets/img/stories/owners/Rebecca_Morris.jpg);
+}
+.story-card:nth-of-type(20) {
+  background-image: url(../assets/img/stories/Gourmet_Goodies_Homemade_Dog_Treats.jpg);
+}
+.story-card:nth-of-type(20) .story-author {
+  background-image: url(../assets/img/stories/owners/Jessica_Hall.jpg);
+}
+.story-card:last-of-type {
+  display: flex;
+  cursor: default;
+  border: none;
+  height: 200px;
+  background-color: transparent;
+  box-shadow: none;
+}
+.story-card:last-of-type:hover {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  transform: scale(1);
+}
+.btn-wrapper {
+  display: grid;
+  place-items: end;
+}
+.arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+.story-arrow {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.story-arrow:hover {
+  transform: scale(1.05);
+  fill: var(--secondary-bg-color);
+}
+.story-arrow-holder:first-of-type {
+  opacity: 0.5;
+}
